@@ -107,7 +107,6 @@ find ./ -type f -name '*.'$pic_type | xargs -I % basename % .$pic_type | xargs -
 # but if it's empty ...
 if [ ! -s ./rosetta_stone.txt ]; then
 	mv ./conv_tmp_svg/* ./final_svg
-	echo pouet
 else
 	# convert files names if needed
 	while read line; do
